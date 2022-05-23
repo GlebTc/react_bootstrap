@@ -1,7 +1,7 @@
 import React from "react"
 import {Navbar, Nav, Container, Offcanvas} from "react-bootstrap"
 import {NavLink} from 'react-router-dom'
-import Home from "./Home"
+import Button from 'react-bootstrap/Button'
 
 const NavigationBar = () => {
   return(
@@ -23,9 +23,9 @@ const NavigationBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className="nav__links"><NavLink to="/alerts">Alerts</NavLink></Nav.Link>
-                  <Nav.Link className="nav__links"><NavLink to="/accordion">Link 2</NavLink></Nav.Link>
-                  <Nav.Link className="nav__links"><NavLink to="/badge">Link 3</NavLink></Nav.Link>
+                  <Nav.Link ><NavLink to="/alerts"><Button variant="info" className="nav__links" active>Alerts</Button></NavLink></Nav.Link>
+                  <Nav.Link ><NavLink to="/carousel"><Button variant="info" className="nav__links">Carousel</Button></NavLink></Nav.Link>
+                  <Nav.Link ><NavLink to="/badge"><Button variant="info" className="nav__links">Link 3</Button></NavLink></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
