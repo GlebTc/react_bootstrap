@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./containers/Home"
 import NavigationBar from "./containers/NavigationBar"
 import Alerts from "./containers/Alerts"
-import Carousel from "./containers/Carousel"
+import CarouselPage from "./containers/CarouselPage"
 
 
 
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/alerts" element={<Alerts />} />
-        <Route exact path="/carousel" element={<Carousel />} />
+        <Route exact path="/carousel" element={<CarouselPage />} />
       </Routes>
     </Router>
   );
